@@ -1,24 +1,29 @@
 body{
-    display: flex;
+    
     background-color: black;
 }
 
-.titleI{
-    
-    display: grid;
-    color: white;
-    font-size: 30px;
-}
-
-
-.principal{
-   
+.logo{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 6em;
     
-
 }
+
+
+
+.play{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
 .playI{
     display: flex;
     color: white;
@@ -30,6 +35,11 @@ body{
     border-color: white;
 }
 
+.ayuda{
+  
+   
+  
+}
 .about{
     display: flex;
     color: white;
@@ -39,4 +49,15 @@ body{
     height: 2em;
     border: 30%;
     border-color: white;
+    
+}
+
+
+
+/* estamos con about */
+
+.como{
+
+  
+    color: white;
 }
