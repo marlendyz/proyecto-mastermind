@@ -1,63 +1,45 @@
-body{
-    
-    background-color: black;
+body {
+  background-color: black;
 }
 
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 6em;
-    
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6em;
 }
 
-
-
-.play{
-    position: absolute;
-    display: flex;
-    justify-content: center;
+.play {
+  position: absolute;
+  display: flex;
+  justify-content: center;
 }
 
-
-
-
-
-
-.playI{
-    display: flex;
-    color: white;
-    background-color: black;
-    justify-content: center;
-    width: 20em;
-    height: 2em;
-    border: 30%;
-    border-color: white;
+.contenedor-botones {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 6em;
 }
 
-.ayuda{
-  
-   
-  
-}
-.about{
-    display: flex;
-    color: white;
-    background-color: black;
-    justify-content: center;
-    width: 20em;
-    height: 2em;
-    border: 30%;
-    border-color: white;
-    
+.btn-play {
+  display: flex;
+  color: white;
+  background-color: black;
+  justify-content: center;
+  width: 20em;
+  height: 2em;
+  border: 30%;
+  border-color: white;
 }
 
-
-
-/* estamos con about */
-
-.como{
-
-  
-    color: white;
+.btn-about {
+  display: flex;
+  color: white;
+  background-color: black;
+  justify-content: center;
+  width: 20em;
+  height: 2em;
+  border: 30%;
+  border-color: white;
 }

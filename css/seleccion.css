@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+.completar.colores{
+    display: flex;
+    justify-content: center;
+    width: 40em ;
+    
+}
+.completar-con-colores{
+    display: inline-block;
+    
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    border: 3px solid black;
+    
+    
+  
+  
+
+}

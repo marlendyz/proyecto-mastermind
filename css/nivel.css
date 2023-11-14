@@ -1,0 +1,66 @@
+body {
+  background-color: black;
+}
+
+.int-name {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  justify-content: center;
+  padding: 10em;
+  
+}
+
+input{
+    width: 20em;;
+  padding: 10px;
+    border: px solid #3b0d0d;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+.botones-nivel{
+
+  display: flex;
+  justify-content: space-around;
+  padding: 7em;
+
+}
+.boton-nivel1 {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  height: 5em;
+  width: 9em;
+  border-radius: 9px;
+  border-color: blue;
+ 
+  
+}
+
+.boton-nivel2 {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  height: 5em;
+  width: 9em;
+  border-radius: 9px;
+  border-color: blue;
+  
+
+}
+
+.boton-nivel3 {
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  height: 5em;
+  width: 9em;
+  border-radius: 9px;
+  border-color: blue;
+ 
+}
