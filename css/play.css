@@ -1,0 +1,132 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+}
+
+.contenedorprincipal{
+ display:flex;
+
+}
+.contenedor-intentos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.intentos1 {
+  width: 2em;
+  height: 2em;
+  border-radius: 10%;
+  border: 3px solid blue;
+}
+.intentos2 {
+  width: 2em;
+  height: 2em;
+  border-radius: 10%;
+  border: 3px solid blue;
+}
+.intentos3 {
+  width: 2em;
+  height: 2em;
+  border-radius: 10%;
+  border: 3px solid blue;
+}
+.intentos4 {
+  width: 2em;
+  height: 2em;
+  border-radius: 10%;
+  border: 3px solid blue;
+}
+
+.completar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.rellena1 {
+  display: inline-block;
+  margin: 0, 1em;
+  width: 40em;
+  width: 4em;
+  height: 4em;
+  border-radius: 10%;
+  border: 3px solid blue;
+}
+.rellena2 {
+  display: inline-block;
+  margin: 0, 1em;
+  width: 40em;
+  width: 4em;
+  height: 4em;
+  border-radius: 10%;
+  border: 3px solid blue;
+}
+
+.rellena3 {
+  display: inline-block;
+  margin: 0, 1em;
+  width: 40em;
+  width: 4em;
+  height: 4em;
+  border-radius: 10%;
+  border: 3px solid blue;
+}
+.rellena4 {
+  display: inline-block;
+  margin: 0, 1em;
+  width: 40em;
+  width: 4em;
+  height: 4em;
+  border-radius: 10%;
+  border: 3px solid blue;
+}
+
+.colores {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6em;
+}
+
+.colores1 {
+  display: inline-block;
+  margin: 0, 1em;
+  width: 40em;
+  width: 4em;
+  height: 4em;
+  border-radius: 10%;
+  border: 3px solid blue;
+}
+.colores2 {
+  display: inline-block;
+  margin: 0, 1em;
+  width: 40em;
+  width: 4em;
+  height: 4em;
+  border-radius: 10%;
+  border: 3px solid blue;
+}
+.colores3 {
+  display: inline-block;
+  margin: 0, 1em;
+  width: 40em;
+  width: 4em;
+  height: 4em;
+  border-radius: 10%;
+  border: 3px solid blue;
+}
+.colores4 {
+  display: inline-block;
+  margin: 0, 1em;
+  width: 40em;
+  width: 4em;
+  height: 4em;
+  border-radius: 10%;
+  border: 3px solid blue;
+}
