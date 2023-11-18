@@ -130,3 +130,12 @@ body {
   border-radius: 10%;
   border: 3px solid blue;
 }
+
+.validar{
+  display: flex;
+  width: 6em;
+  height: 6em;
+  justify-content: center;
+  align-items: center;
+
+}

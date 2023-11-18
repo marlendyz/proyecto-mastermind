@@ -3,6 +3,7 @@ let nombreJUgador = document.getElementById("jugador");
 const jugador = sessionStorage.getItem("nombreJugador");
 
 nombreJUgador.innerHTML = `${jugador} selciona el color`;
+// esto es para pintar el nombre del jugador el la pagina web
 
 let color1 = document.getElementById("color1");
 color1.onclick = function () {
@@ -20,17 +21,19 @@ let color4 = document.getElementById("color4");
 color4.onclick = function () {
   sessionStorage.setItem("color", "brown");
 };
+
 let color5 = document.getElementById("color5");
 color5.onclick = function () {
-  sessionStorage.setItem("color", "greenyellow");
+  sessionStorage.setItem("color", "yellow");
 };
+
 let color6 = document.getElementById("color6");
 color6.onclick = function () {
   sessionStorage.setItem("color", "indianred");
 };
 let color7 = document.getElementById("color7");
 color7.onclick = function () {
-  sessionStorage.setItem("color", "black");
+  sessionStorage.setItem("color", "yellow");
 };
 let color8 = document.getElementById("color8");
 color8.onclick = function () {
@@ -42,7 +45,7 @@ color9.onclick = function () {
 };
 let color10 = document.getElementById("color10");
 color10.onclick = function () {
-  sessionStorage.setItem("color", "crimson");
+  sessionStorage.setItem("color", "blueviolet");
 };
 
 
@@ -55,6 +58,7 @@ rellenar1.onclick = function () {
   let color = sessionStorage.getItem("color");
   rellenar1.style.backgroundColor = color;
   seleccionColores.splice(0, 1, color);
+  sessionStorage.removeItem(color)
 };
 
 let rellenar2 = document.getElementById("completarcolores2");
@@ -63,6 +67,7 @@ rellenar2.onclick = function () {
   let color = sessionStorage.getItem("color");
   rellenar2.style.backgroundColor = color;
   seleccionColores.splice(1, 1, color);
+  sessionStorage.removeItem(color)
 };
 
 let rellenar3 = document.getElementById("completarcolores3");
@@ -71,6 +76,7 @@ rellenar3.onclick = function () {
   let color = sessionStorage.getItem("color");
   rellenar3.style.backgroundColor = color;
   seleccionColores.splice(2, 1, color);
+  sessionStorage.removeItem(color)
 };
 
 let rellenar4 = document.getElementById("completarcolores4");
@@ -79,6 +85,7 @@ rellenar4.onclick = function () {
   let color = sessionStorage.getItem("color");
   rellenar4.style.backgroundColor = color;
   seleccionColores.splice(3, 1, color);
+  sessionStorage.removeItem(color)
 };
 
 console.log(seleccionColores);
