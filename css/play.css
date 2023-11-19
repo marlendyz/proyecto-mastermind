@@ -7,13 +7,24 @@ body {
 
 .contenedorprincipal{
  display:flex;
+ justify-content: center;
+ flex-direction: column;
+ margin-top: 2em;
+
 
 }
+.img{
+  display: flex;
+  justify-content: center;
+}
+
 .contenedor-intentos {
+
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
 }
 
 .intentos1 {
@@ -46,6 +57,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-top: 2em;
 }
 
 .rellena1 {

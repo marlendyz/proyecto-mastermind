@@ -18,29 +18,29 @@ body{
     width: 4em;
     height: 4em;
     border-radius: 50%;
-    border: 3px solid blue;
+    border: 3px solid white;
     
 }
 
 .colores{
     display: inline-block;
     margin: 0,1em;
-    width: 40em ;
+    width: 20em ;
     width: 4em;
     height: 4em;
     border-radius: 50%;
-    border: 3px solid blue;
+    border: 3px solid white;
     
 }
 
 .colores1{
     display: inline-block;
     margin: 0,1em;
-    width: 40em ;
+    width: 20em ;
     width: 4em;
     height: 4em;
     border-radius: 50%;
-    border: 3px solid blue;
+    border: 3px solid white;
     background-color: aqua;
 }
 .colores2{
@@ -50,77 +50,77 @@ body{
     width: 4em;
     height: 4em;
     border-radius: 50%;
-    border: 3px solid blue;
+    border: 3px solid white;
     background-color: blue;
 }
 .colores3{
     display: inline-block;
     margin: 0,1em;
-    width: 40em ;
+    width: 20em ;
     width: 4em;
     height: 4em;
     border-radius: 50%;
-    border: 3px solid blue;
+    border: 3px solid white;
     background-color: hotpink;
 }
 .colores4{
     display: inline-block;
     margin: 0,1em;
-    width: 40em ;
+    width: 20em ;
     width: 4em;
     height: 4em;
     border-radius: 50%;
-    border: 3px solid blue;
+    border: 3px solid white;
     background-color: brown;
 }
 .colores5{
     display: inline-block;
     margin: 0,1em;
-    width: 40em ;
+    width: 20em ;
     width: 4em;
     height: 4em;
     border-radius: 50%;
-    border: 3px solid blue;
+    border: 3px solid white;
     background-color: greenyellow;
 }
 .colores6{
     display: inline-block;
     margin: 0,1em;
-    width: 40em ;
+    width: 20em ;
     width: 4em;
     height: 4em;
     border-radius: 50%;
-    border: 3px solid blue;
+    border: 3px solid white;
     background-color: indianred;
 }
 .colores7{
     display: inline-block;
     margin: 0,1em;
-    width: 40em ;
+    width: 20em ;
     width: 4em;
     height: 4em;
     border-radius: 50%;
-    border: 3px solid blue;
+    border: 3px solid white;
     background-color: yellow;
 }
 .colores8{
     display: inline-block;
     margin: 0,1em;
-    width: 40em ;
+    width: 20em ;
     width: 4em;
     height: 4em;
     border-radius: 50%;
-    border: 3px solid blue;
+    border: 3px solid white;
     background-color: cornflowerblue;
 }
 .colores9{
     display: inline-block;
     margin: 0,1em;
-    width: 40em ;
+    width: 20em ;
     width: 4em;
     height: 4em;
     border-radius: 50%;
-    border: 3px solid blue;
+    border: 3px solid white;
     background-color: coral;
 }
 .colores10{
@@ -130,7 +130,7 @@ body{
     width: 4em;
     height: 4em;
     border-radius: 50%;
-    border: 3px solid blue;
+    border: 3px solid white;
     background-color: blueviolet;
 }
 
@@ -143,5 +143,5 @@ body{
     height: 5em;
     width: 9em;
     border-radius: 9px;
-    border-color: blue;
+    border-color: white;
 }

@@ -19,25 +19,24 @@ console.log(combinacionFinal(seleccionColores)); //para invocar la funcion tengo
 let combinacionFinalGanadora = combinacionFinal(seleccionColores);
 
 colorElegido1.addEventListener("click", () => {
-  let color1 = colorElegido1.style.backgroundColor 
+  let color1 = colorElegido1.style.backgroundColor;
   sessionStorage.setItem("color", color1);
 });
 
 colorElegido2.addEventListener("click", () => {
-  let color2 = colorElegido2.style.backgroundColor 
+  let color2 = colorElegido2.style.backgroundColor;
   sessionStorage.setItem("color", color2);
 });
 
 colorElegido3.addEventListener("click", () => {
-  let color3 = colorElegido3.style.backgroundColor
+  let color3 = colorElegido3.style.backgroundColor;
   sessionStorage.setItem("color", color3);
 });
 
 colorElegido4.addEventListener("click", () => {
-  let color4 = colorElegido4.style.backgroundColor 
+  let color4 = colorElegido4.style.backgroundColor;
   sessionStorage.setItem("color", color4);
 });
-
 
 let combinacionJugador = [];
 
@@ -46,7 +45,7 @@ let rellenar1 = document.getElementById("completa1");
 rellenar1.onclick = function () {
   let color = sessionStorage.getItem("color");
   rellenar1.style.backgroundColor = color;
-  combinacionJugador.splice(0, 1, color);
+  combinacionJugador[0] = color;
 };
 
 let rellenar2 = document.getElementById("completa2");
@@ -54,7 +53,7 @@ let rellenar2 = document.getElementById("completa2");
 rellenar2.onclick = function () {
   let color = sessionStorage.getItem("color");
   rellenar2.style.backgroundColor = color;
-  combinacionJugador.splice(1, 1, color);
+  combinacionJugador[1] = color;
 };
 
 let rellenar3 = document.getElementById("completa3");
@@ -62,7 +61,7 @@ let rellenar3 = document.getElementById("completa3");
 rellenar3.onclick = function () {
   let color = sessionStorage.getItem("color");
   rellenar3.style.backgroundColor = color;
-  combinacionJugador.splice(2, 1, color);
+  combinacionJugador[2] = color;
 };
 
 let rellenar4 = document.getElementById("completa4");
@@ -70,25 +69,65 @@ let rellenar4 = document.getElementById("completa4");
 rellenar4.onclick = function () {
   let color = sessionStorage.getItem("color");
   rellenar4.style.backgroundColor = color;
-  combinacionJugador.splice(3, 1, color);
+  combinacionJugador[3] = color;
 };
 
-console.log(combinacionJugador);
+const existeGanador = (combinacionJugador, combinacionGanadora) => {
+  for (let i = 0; i < combinacionGanadora.length; i++) {
+    if (combinacionGanadora[i] !== combinacionJugador[i]) {
+      return false;
+    }
+  }
+  return true;
+};
+
+
+
+
+const pintarAciertos = (aciertoPosicion,aciertosFinal) =>{
+
+  for (let i = 0; i < aciertoPosicion.length; i++) {
+    if (aciertosFinal[i] == 1) {
+      aciertoPosicion[i].style.backgroundColor = "green";
+    }else {
+      aciertoPosicion[i].style.backgroundColor = "red";
+    }
+  }
+}
+
+
+
 
 let btnValidar = document.getElementById("validar");
-
 btnValidar.addEventListener("click", () => {
-//   for (let i = 0; i < combinacionJugador.length; i++) {
-//     if (combinacionJugador[i] !== combinacionFinalGanadora[i]) {
-//       alert("Las combinaciones no son iguales");
-//       return;
-//     } 
-//     location.href="./play.html"
-//   }
-if (JSON.stringify(combinacionJugador) == JSON.stringify(combinacionFinalGanadora)){
-  location.href="./win.html"
-}else{
+  let acierto0 = document.getElementById("intentos1");
+let acierto1 = document.getElementById("intentos2");
+let acierto2 = document.getElementById("intentos3");
+let acierto3 = document.getElementById("intentos4");
 
-return alert("sigue intentando")
+let aciertoPosicion = [acierto0, acierto1, acierto2, acierto3];
+
+const validarAciertos = (combinacionJugador, combinacionGanadora) => {
+  let aciertos = []
+  console.log(combinacionGanadora);
+  console.log(combinacionJugador);
+  for (let i = 0; i < combinacionGanadora.length; i++) {
+    if (combinacionGanadora[i] == combinacionJugador[i]) {
+      aciertos.push(1);
+    }else {
+      aciertos.push(0);
+  }
 }
+return aciertos;
+}
+let aciertosFinal = validarAciertos(combinacionJugador, combinacionFinalGanadora);
+  pintarAciertos(aciertoPosicion,aciertosFinal);
+  esJugadaGanadora = existeGanador(
+    combinacionJugador,
+    combinacionFinalGanadora
+  );
+
+  if (esJugadaGanadora) {
+    location.href = "./win.html";
+  }
 });
