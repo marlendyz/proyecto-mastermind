@@ -24,7 +24,7 @@ color4.onclick = function () {
 
 let color5 = document.getElementById("color5");
 color5.onclick = function () {
-  sessionStorage.setItem("color", "yellow");
+  sessionStorage.setItem("color", "greenyellow");
 };
 
 let color6 = document.getElementById("color6");

@@ -1,34 +1,42 @@
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
 
-.como{
-    
-     color: white;
-     font-size: 30px;
-     margin: 3em;
-     
-
-    /* padding: 3em;
-    font-size: 30px;
-    left: 4em; */
-
-    
-    
+.letrasayuda {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 1em;
+  font-weight: bold;
+  color: white;
 }
 
-
-.reglas p{
-    text-align: justify;
-    display: flex;
-    color: white;
-    justify-content: center;
-    font-size: 20px;
+.como {
+  width: 8em;
+  height: 1em;
+  color: white;
+  font-size: 28px;
+  margin: 3em;
 }
 
-.autor{
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    
+.reglas{
+    width: 15;
+    height: 15em;
+}
+.reglas p {
+display: flex;
+  text-align:center;
+  display: flex;
+  color: white;
+  justify-content: center;
+ 
+}
+
+.autor {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: white;
+
 }

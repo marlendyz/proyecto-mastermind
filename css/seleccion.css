@@ -6,12 +6,10 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 6em;
+    gap: 2em;
  
      
 }
-
-    
     
 .completar-con-colores{
     display: inline-block;
@@ -25,7 +23,6 @@ body{
 .colores{
     display: inline-block;
     margin: 0,1em;
-    width: 20em ;
     width: 4em;
     height: 4em;
     border-radius: 50%;
@@ -36,7 +33,6 @@ body{
 .colores1{
     display: inline-block;
     margin: 0,1em;
-    width: 20em ;
     width: 4em;
     height: 4em;
     border-radius: 50%;
@@ -46,7 +42,6 @@ body{
 .colores2{
     display: inline-block;
     margin: 0,1em;
-    width: 40em ;
     width: 4em;
     height: 4em;
     border-radius: 50%;
@@ -56,7 +51,6 @@ body{
 .colores3{
     display: inline-block;
     margin: 0,1em;
-    width: 20em ;
     width: 4em;
     height: 4em;
     border-radius: 50%;
@@ -66,7 +60,6 @@ body{
 .colores4{
     display: inline-block;
     margin: 0,1em;
-    width: 20em ;
     width: 4em;
     height: 4em;
     border-radius: 50%;
@@ -76,7 +69,6 @@ body{
 .colores5{
     display: inline-block;
     margin: 0,1em;
-    width: 20em ;
     width: 4em;
     height: 4em;
     border-radius: 50%;
@@ -86,7 +78,6 @@ body{
 .colores6{
     display: inline-block;
     margin: 0,1em;
-    width: 20em ;
     width: 4em;
     height: 4em;
     border-radius: 50%;
@@ -96,7 +87,6 @@ body{
 .colores7{
     display: inline-block;
     margin: 0,1em;
-    width: 20em ;
     width: 4em;
     height: 4em;
     border-radius: 50%;
@@ -106,7 +96,6 @@ body{
 .colores8{
     display: inline-block;
     margin: 0,1em;
-    width: 20em ;
     width: 4em;
     height: 4em;
     border-radius: 50%;
@@ -116,7 +105,6 @@ body{
 .colores9{
     display: inline-block;
     margin: 0,1em;
-    width: 20em ;
     width: 4em;
     height: 4em;
     border-radius: 50%;
@@ -126,7 +114,6 @@ body{
 .colores10{
     display: inline-block;
     margin: 0,1em;
-    width: 40em ;
     width: 4em;
     height: 4em;
     border-radius: 50%;
@@ -136,10 +123,10 @@ body{
 
 
 .seleccion{
+    
     background-color: black;
     text-align: center;
     color: white;
-    font-size: 20px;
     height: 5em;
     width: 9em;
     border-radius: 9px;

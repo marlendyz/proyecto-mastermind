@@ -31,25 +31,25 @@ body {
   width: 2em;
   height: 2em;
   border-radius: 10%;
-  border: 3px solid blue;
+  border: 3px solid white;
 }
 .intentos2 {
   width: 2em;
   height: 2em;
   border-radius: 10%;
-  border: 3px solid blue;
+  border: 3px solid white;
 }
 .intentos3 {
   width: 2em;
   height: 2em;
-  border-radius: 10%;
-  border: 3px solid blue;
+  border-radius: 10;
+  border: 3px solid white;
 }
 .intentos4 {
   width: 2em;
   height: 2em;
   border-radius: 10%;
-  border: 3px solid blue;
+  border: 3px solid white;
 }
 
 .completar {
@@ -67,7 +67,7 @@ body {
   width: 4em;
   height: 4em;
   border-radius: 10%;
-  border: 3px solid blue;
+  border: 3px solid white;
 }
 .rellena2 {
   display: inline-block;
@@ -76,7 +76,7 @@ body {
   width: 4em;
   height: 4em;
   border-radius: 10%;
-  border: 3px solid blue;
+  border: 3px solid white;
 }
 
 .rellena3 {
@@ -86,7 +86,7 @@ body {
   width: 4em;
   height: 4em;
   border-radius: 10%;
-  border: 3px solid blue;
+  border: 3px solid white;
 }
 .rellena4 {
   display: inline-block;
@@ -95,7 +95,7 @@ body {
   width: 4em;
   height: 4em;
   border-radius: 10%;
-  border: 3px solid blue;
+  border: 3px solid white;
 }
 
 .colores {
@@ -113,7 +113,7 @@ body {
   width: 4em;
   height: 4em;
   border-radius: 10%;
-  border: 3px solid blue;
+  border: 3px solid white;
 }
 .colores2 {
   display: inline-block;
@@ -122,7 +122,7 @@ body {
   width: 4em;
   height: 4em;
   border-radius: 10%;
-  border: 3px solid blue;
+  border: 3px solid white;
 }
 .colores3 {
   display: inline-block;
@@ -131,7 +131,7 @@ body {
   width: 4em;
   height: 4em;
   border-radius: 10%;
-  border: 3px solid blue;
+  border: 3px solid white;
 }
 .colores4 {
   display: inline-block;
@@ -140,14 +140,18 @@ body {
   width: 4em;
   height: 4em;
   border-radius: 10%;
-  border: 3px solid blue;
+  border: 3px solid white;
 }
 
 .validar{
   display: flex;
+  color: white;
   width: 6em;
   height: 6em;
   justify-content: center;
   align-items: center;
-
+  flex-direction: column;
+ border-radius: 10%;
+  border: 3px solid white;
+  background-color: black;
 }
