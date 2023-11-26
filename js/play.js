@@ -81,47 +81,45 @@ const existeGanador = (combinacionJugador, combinacionGanadora) => {
   return true;
 };
 
-
-
-
-const pintarAciertos = (aciertoPosicion,aciertosFinal) =>{
-
+const pintarAciertos = (aciertoPosicion, aciertosFinal) => {
   for (let i = 0; i < aciertoPosicion.length; i++) {
     if (aciertosFinal[i] == 1) {
       aciertoPosicion[i].style.backgroundColor = "green";
-    }else {
+    } else {
       aciertoPosicion[i].style.backgroundColor = "red";
     }
   }
-}
+};
 
-
-
-
+let contdorIntentos = 0;
 let btnValidar = document.getElementById("validar");
 btnValidar.addEventListener("click", () => {
   let acierto0 = document.getElementById("intentos1");
-let acierto1 = document.getElementById("intentos2");
-let acierto2 = document.getElementById("intentos3");
-let acierto3 = document.getElementById("intentos4");
+  let acierto1 = document.getElementById("intentos2");
+  let acierto2 = document.getElementById("intentos3");
+  let acierto3 = document.getElementById("intentos4");
 
-let aciertoPosicion = [acierto0, acierto1, acierto2, acierto3];
+  let aciertoPosicion = [acierto0, acierto1, acierto2, acierto3];
 
-const validarAciertos = (combinacionJugador, combinacionGanadora) => {
-  let aciertos = []
-  console.log(combinacionGanadora);
-  console.log(combinacionJugador);
-  for (let i = 0; i < combinacionGanadora.length; i++) {
-    if (combinacionGanadora[i] == combinacionJugador[i]) {
-      aciertos.push(1);
-    }else {
-      aciertos.push(0);
-  }
-}
-return aciertos;
-}
-let aciertosFinal = validarAciertos(combinacionJugador, combinacionFinalGanadora);
-  pintarAciertos(aciertoPosicion,aciertosFinal);
+  const validarAciertos = (combinacionJugador, combinacionGanadora) => {
+    let aciertos = [];
+    console.log(combinacionGanadora);
+    console.log(combinacionJugador);
+    for (let i = 0; i < combinacionGanadora.length; i++) {
+      if (combinacionGanadora[i] == combinacionJugador[i]) {
+        aciertos.push(1);
+      } else {
+        aciertos.push(0);
+      }
+    }
+    return aciertos;
+  };
+  let aciertosFinal = validarAciertos(
+    combinacionJugador,
+    combinacionFinalGanadora
+  );
+  pintarAciertos(aciertoPosicion, aciertosFinal);
+  
   esJugadaGanadora = existeGanador(
     combinacionJugador,
     combinacionFinalGanadora
@@ -129,5 +127,6 @@ let aciertosFinal = validarAciertos(combinacionJugador, combinacionFinalGanadora
 
   if (esJugadaGanadora) {
     location.href = "./win.html";
-  }
+    contdorIntentos++;
+  } else if (contador == 6) location.href = "./lost.html";
 });

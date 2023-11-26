@@ -2,7 +2,7 @@ let nombreJUgador = document.getElementById("jugador");
 
 const jugador = sessionStorage.getItem("nombreJugador");
 
-nombreJUgador.innerHTML = `${jugador} selciona el color`;
+nombreJUgador.innerHTML = `${jugador} select the color`;
 // esto es para pintar el nombre del jugador el la pagina web
 
 let color1 = document.getElementById("color1");
