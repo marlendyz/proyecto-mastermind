@@ -94,6 +94,7 @@ const pintarAciertos = (aciertoPosicion, aciertosFinal) => {
 let contdorIntentos = 0;
 let btnValidar = document.getElementById("validar");
 btnValidar.addEventListener("click", () => {
+  contdorIntentos++;
   let acierto0 = document.getElementById("intentos1");
   let acierto1 = document.getElementById("intentos2");
   let acierto2 = document.getElementById("intentos3");
@@ -103,6 +104,7 @@ btnValidar.addEventListener("click", () => {
 
   const validarAciertos = (combinacionJugador, combinacionGanadora) => {
     let aciertos = [];
+    console.log(contdorIntentos);
     console.log(combinacionGanadora);
     console.log(combinacionJugador);
     for (let i = 0; i < combinacionGanadora.length; i++) {
@@ -119,7 +121,7 @@ btnValidar.addEventListener("click", () => {
     combinacionFinalGanadora
   );
   pintarAciertos(aciertoPosicion, aciertosFinal);
-  
+
   esJugadaGanadora = existeGanador(
     combinacionJugador,
     combinacionFinalGanadora
@@ -127,6 +129,7 @@ btnValidar.addEventListener("click", () => {
 
   if (esJugadaGanadora) {
     location.href = "./win.html";
-    contdorIntentos++;
-  } else if (contador == 6) location.href = "./lost.html";
+  } else if (contdorIntentos == 6) {
+    location.href = "./lost.html";
+  }
 });
